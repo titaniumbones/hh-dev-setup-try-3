@@ -378,7 +378,7 @@ main() {
 
   
   h2 "Installing development theme"
-  /wait-for-it.sh gulp:3001 -- echo "gulp is up, activating script"
+  /wait-for-it.sh gulp:3001 -t 0 -- echo "gulp is up, activating script"
   get_dev_theme
   # h2 "Running local scripts from /local-scripts directory"
   # add_local_scripts
